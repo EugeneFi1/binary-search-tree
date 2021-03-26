@@ -36,7 +36,7 @@ class BinarySearchTree {
         }
     }
 
-    delete(index) {
+    remove(index) {
         try {
             this.deleteNode(this.root, index);
         } catch (TypeError) {
@@ -138,7 +138,7 @@ bst.add(20);
 bst.add(30);
 bst.add(4);
 
-bst.delete(332);
+bst.remove(332);
 bst.search(123);
 
 bst.traverseStart();
